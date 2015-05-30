@@ -1,0 +1,560 @@
+
+<!DOCTYPE HTML>
+<html xml:lang="zh-TW" lang="zh-TW">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Azblink iGuardian SBC</title>
+
+    <link rel="stylesheet" type="text/css" href="script/a_dev.css" />
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        <link rel="stylesheet" href="css/skel.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-xlarge.css" />
+    </script>
+</head>
+<body>
+<!-- S header -->
+                        <header id="header" class="skel-layers-fixed">
+                                <h1><img src="images/logo.jpeg"/><a href="#">iMOS 企業行動化辦公室</a></h1>
+
+                                <nav id="nav">
+                                        <ul>
+                                                <li><a href="index1.html">概述</a></li>
+                                                <li><a href="gallery.html">圖集</a></li>
+                                                <li><a href="spec.html">規格</a></li>
+                                        </ul>
+                                </nav>
+                        </header>
+
+
+<!-- E header -->
+
+
+<!--
+<div id="transform-buttons" class="btn-group btn-default" style="">
+    
+        <a class="btn btn-default" href="#standard">Standard</a>
+    
+        <a class="btn btn-default" href="#professional">Professional</a>
+
+        <a class="btn btn-default" href="#enterprise">Enterprise</a>
+
+</div>-->
+<div class="spec_hidden_block"></div>
+<a name="standard"></a>
+<div class="table1">
+  <h2 >Standard</h2>
+    <table class="table" data-toggle="table" data-cache="false" data-height="300px">
+      <tr><td><div class="property">功能</div></td>
+      <td><div class="value">
+      <ul>
+      <p>SIP Header conversion</p>
+      <p>SIP Normalization</p>
+      <p>High Availability</p>
+      <p>All Admission Control</p>
+      <p>Call Black/White list</p>
+      <p>Translation of RTP, SRTP</p>
+      <p>VPN</p>
+      <p>128-bit Encryption</p>
+      <p>XMPP IM</p>
+      <p>MWI</p>
+      <p>Support SIP trunk with multi-ITSP</p>
+      </ul>
+      <p>(Registrations to ITSPs is invoked independently)</p>
+      </div></td></tr>
+
+      <tr><td><div class="property">虛擬私有網路 (VPN)</div></td><td>
+      <div class="value"><ul>
+      <p>Client-to-site</p>
+      <p>Site-to-site in  routing mode</p>
+      <p>Site-to-site in bridging mode</p>
+      <p>Self-sustained VPN-key Management</p>
+      <p>Server-specific CA to issue certificates</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">流量與品質 (QoS)</div></td><td>
+      <div class="value"><ul>
+      <p>Traffic Policing</p>
+      <p>Resource Allocation</p>
+      <p>Rate Limiting</p>
+      <p>Call Admission Control</p>
+      <p>TOS/DSCP bit setting</p>
+      <p>Traffic Prioritizing</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">語音編碼</div></td><td>
+      <div class="value"><p><ul>
+      <p>G.729 (pass-through)</p>
+      <p>GSM</p>
+      <p>G.711 A-law/mu-law</p>
+      <p>Speex</p>
+      </ul></p></div></td></tr>
+
+       <tr><td><div class="property">視訊編碼</div></td><td>
+      <div class="value"><p><ul>
+      <p>H.261</p>
+      <p>H.263/H.263+</p>
+      <p>H.264 (pass-through)</p>
+      <p>VP8 (pass-through)</p>
+      </ul></p></div></td></tr>
+
+      <tr><td><div class="property">處理器</div></td><td>
+      <div class="value"><p>Intel J1900 2G, 2M Cache</p></div></td></tr>
+      
+      <tr><td><div class="property">記憶體</div></td>
+      <td><div class="value"><p>DDR3L-1333 2G</p></div></td></tr>
+
+      <tr><td><div class="property">硬碟</div></td>
+      <td><div class="value"><p>SATA3-500G</p></div></td></tr>
+
+      <tr><td><div class="property">RS-232</div></td>
+      <td><div class="value"><p>Maintenance, Debugging</p></div></td></tr>
+
+      <tr><td><div class="property">WAN</div></td>
+      <td><div class="value"><p>4GbE RJ45</p></div></td></tr>
+
+      <tr><td><div class="property">LAN</div></td>
+      <td><div class="value"><p>4GbE RJ45</p></div></td></tr>
+
+      <tr><td><div class="property">IPv6 支援</div></td>
+      <td><div class="value"><p>YES</p></div></td></tr>
+
+      <tr><td><div class="property">Console</div></td>
+      <td><div class="value"><p>RJ45 to RS-232 Console</p></div></td></tr>
+
+      <tr><td><div class="property">電源</div></td>
+      <td><div class="value"><p>40W 12V DC Adapter</p></div></td></tr>
+
+      <tr><td><div class="property">安全性</div></td>
+      <td><div class="value">
+      <ul>
+      <p>Proxy</p>
+      <p>Port Fowarding</p>
+      <p>LAN-Net Loopback</p>
+      <p>IP Masquerade </p>
+      <p>IP Load Balance</p>
+      <p>Reshuffle</p>
+      <p>Interface Limiting</p>
+      <p>Request Filter </p>
+      <p>Block Host</p>
+      <p>Traffic Prioritzing</p>
+      <p>Priority Classes</p>
+      <p>Reserve Proxy</p>
+      <p>128-bit Encryption</p>
+      <p>IP Policy Routing</p>
+      </ul> 
+      </div></td></tr>
+
+      <tr><td><div class="property">連結</div></td>
+      <td><div class="value">
+      <ul>
+      <p>SIP</p>
+      <p>Network Bypass</p>
+      <p>VPN </p>
+      <p>Protocol Converting</p>
+      <p>T1/E1 (Optional Module)</p>
+      <p>NAT</p>
+      </ul>
+      <p>(Zone re-definition for Ethernet interfaces, Bridging mode/Routing mode configuration)</p>
+      </div></td></tr>
+
+      <tr><td><div class="property">多媒體服務</div></td><td>
+      <div class="value"><ul>
+      <p>DTMF Pass-through + Connection</p>
+      <p>Media Codec Transferring</p>
+      <p>Ringback Tone Regeneration</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">其他</div></td><td>
+      <div class="value"><ul>
+      <p>統計 以及 使用量資訊</p>
+      <p>回聲消除</p>
+      <p>RSIP Info</p>
+      <p>In-band Audio</p>
+      <p>RFC 2833 compliant DTMF relay</p>
+      <p>VoIP (RTP/RTCP) per IETF RFC 3550 & 3551</p>
+      </ul></div></td></tr>
+
+      <tr><td><div class="property">最大通話數</div></td>
+      <td><div class="value"><p>15</p></div></td></tr>
+
+      <tr><td><div class="property">支援</div></td><td>
+      <div class="value"><ul>
+      <p>Microsoft Lync</p>
+      <p>IMS in teleco operators</p>
+      <p>OXO/OXE switch</p>
+      <p>Skype Connect</p>
+      </ul></div></td></tr>
+
+      <tr><td><div class="property">系統</div></td>
+      <td><div class="value">
+      <ul>
+      <p>AzOS System Enviroment</p>
+      <p>Embedded HTTP Web Server</p>
+      <p>Telnet</p>
+      <p>SNMP V2, V3</p>
+      <p>Remote configuation</p>
+      <p>VPN Server</p>
+      <p>Firewall</p>
+      <p>DNS Manager</p>
+      <p>XMPP Control Manager</p>
+      <p>Plug-in Storage Maintain Interface</p>
+
+      </ul> 
+      </div></td></tr></table>
+</div>
+ 
+
+<br>
+
+
+
+<div class="table2">
+<a name="professional"></a>
+  <h2 class="section-label">規格-Professional</h2>
+    <table class="table" data-toggle="table" data-cache="false" data-height="300px">
+      <tr><td><div class="property">功能</div></td>
+      <td><div class="value">
+      <ul>
+      <p>SIP Header conversion</p>
+      <p>SIP Normalization</p>
+      <p>High Availability</p>
+      <p>All Admission Control</p>
+      <p>Call Black/White list</p>
+      <p>Translation of RTP, SRTP</p>
+      <p>VPN</p>
+      <p>128-bit Encryption</p>
+      <p>XMPP IM</p>
+      <p>MWI</p>
+      <p>Support SIP trunk with multi-ITSP</p>
+      </ul>
+      <p>(Registrations to ITSPs is invoked independently)</p>
+      </div></td></tr>
+
+      <tr><td><div class="property">虛擬私有網路 (VPN)</div></td><td>
+      <div class="value"><ul>
+      <p>Client-to-site</p>
+      <p>Site-to-site in  routing mode</p>
+      <p>Site-to-site in bridging mode</p>
+      <p>Self-sustained VPN-key Management</p>
+      <p>Server-specific CA to issue certificates</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">流量與品質 (QoS)</div></td><td>
+      <div class="value"><ul>
+      <p>Traffic Policing</p>
+      <p>Resource Allocation</p>
+      <p>Rate Limiting</p>
+      <p>Call Admission Control</p>
+      <p>TOS/DSCP bit setting</p>
+      <p>Traffic Prioritizing</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">語音編碼</div></td><td>
+      <div class="value"><p><ul>
+      <p>G.729 (pass-through)</p>
+      <p>GSM</p>
+      <p>G.711 A-law/mu-law</p>
+      <p>Speex</p>
+      </ul></p></div></td></tr>
+
+       <tr><td><div class="property">視訊編碼</div></td><td>
+      <div class="value"><p><ul>
+      <p>H.261</p>
+      <p>H.263/H.263+</p>
+      <p>H.264 (pass-through)</p>
+      <p>VP8 (pass-through)</p>
+      </ul></p></div></td></tr>
+
+      <tr><td><div class="property">處理器</div></td><td>
+      <div class="value"><p>Intel J1900 2G, 2M Cache</p></div></td></tr>
+      
+      <tr><td><div class="property">記憶體</div></td>
+      <td><div class="value"><p>DDR3L-1333 4G</p></div></td></tr>
+
+      <tr><td><div class="property">硬碟</div></td>
+      <td><div class="value"><p>SATA3-1TB</p></div></td></tr>
+
+      <tr><td><div class="property">RS-232</div></td>
+      <td><div class="value"><p>Maintenance, Debugging</p></div></td></tr>
+
+      <tr><td><div class="property">WAN</div></td>
+      <td><div class="value"><p>4GbE RJ45</p></div></td></tr>
+
+      <tr><td><div class="property">LAN</div></td>
+      <td><div class="value"><p>4GbE RJ45</p></div></td></tr>
+
+      <tr><td><div class="property">IPv6 支援</div></td>
+      <td><div class="value"><p>YES</p></div></td></tr>
+
+      <tr><td><div class="property">Console</div></td>
+      <td><div class="value"><p>RJ45 to RS-232 Console</p></div></td></tr>
+
+      <tr><td><div class="property">電源</div></td>
+      <td><div class="value"><p>40W 12V DC Adapter</p></div></td></tr>
+
+      <tr><td><div class="property">安全性</div></td>
+      <td><div class="value">
+      <ul>
+      <p>Proxy</p>
+      <p>Port Fowarding</p>
+      <p>LAN-Net Loopback</p>
+      <p>IP Masquerade </p>
+      <p>IP Load Balance</p>
+      <p>Reshuffle</p>
+      <p>Interface Limiting</p>
+      <p>Request Filter </p>
+      <p>Block Host</p>
+      <p>Traffic Prioritzing</p>
+      <p>Priority Classes</p>
+      <p>Reserve Proxy</p>
+      <p>128-bit Encryption</p>
+      <p>IP Policy Routing</p>
+      </ul> 
+      </div></td></tr>
+
+      <tr><td><div class="property">連結</div></td>
+      <td><div class="value">
+      <ul>
+      <p>SIP</p>
+      <p>Network Bypass</p>
+      <p>VPN </p>
+      <p>Protocol Converting</p>
+      <p>T1/E1 (Optional Module)</p>
+      <p>NAT</p>
+      </ul>
+      <p>(Zone re-definition for Ethernet interfaces, Bridging mode/Routing mode configuration)</p>
+      </div></td></tr>
+
+      <tr><td><div class="property">多媒體服務</div></td><td>
+      <div class="value"><ul>
+      <p>DTMF Pass-through & Connection</p>
+      <p>Media Codec Transferring</p>
+      <p>Ringback Tone Regeneration</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">其他</div></td><td>
+      <div class="value"><ul>
+      <p>統計以及使用量資訊</p>
+      <p>回聲消除</p>
+      <p>RSIP Info</p>
+      <p>In-band Audio</p>
+      <p>RFC 2833 compliant DTMF relay</p>
+      <p>VoIP (RTP/RTCP) per IETF RFC 3550 & 3551</p>
+      </ul></div></td></tr>
+
+      <tr><td><div class="property">最大通話數</div></td>
+      <td><div class="value"><p>25</p></div></td></tr>
+
+      <tr><td><div class="property">支援</div></td><td>
+      <div class="value"><ul>
+      <p>Microsoft Lync</p>
+      <p>IMS in teleco operators</p>
+      <p>OXO/OXE switch</p>
+      <p>Skype Connect</p>
+      </ul></div></td></tr>
+
+      <tr><td><div class="property">系統</div></td>
+      <td><div class="value">
+      <ul>
+      <p>AzOS System Enviroment</p>
+      <p>Embedded HTTP Web Server</p>
+      <p>Telnet</p>
+      <p>SNMP V2, V3</p>
+      <p>Remote configuation</p>
+      <p>VPN Server</p>
+      <p>Firewall</p>
+      <p>DNS Manager</p>
+      <p>XMPP Control Manager</p>
+      <p>Plug-in Storage Maintain Interface</p>
+
+      </ul> 
+      </div></td></tr></table>
+</div>
+<br>
+<hr>
+
+
+
+<div class="table3">
+<a name="enterprise"></a>     
+  <h2 class="section-label">規格-Enterprise</h2>
+    <table class="table" data-toggle="table" data-cache="false" data-height="300px">
+   
+      <tr><td><div class="property">功能</div></td>
+      <td><div class="value">
+      <ul>
+      <p>SIP Header conversion</p>
+      <p>SIP Normalization</p>
+      <p>High Availability</p>
+      <p>All Admission Control</p>
+      <p>Call Black/White list</p>
+      <p>Translation of RTP, SRTP</p>
+      <p>VPN</p>
+      <p>128-bit Encryption</p>
+      <p>XMPP IM</p>
+      <p>MWI</p>
+      <p>Support SIP trunk with multi-ITSP</p>
+      </ul>
+      <p>(Registrations to ITSPs is invoked independently)</p>
+      </div></td></tr>
+
+      <tr><td><div class="property">虛擬私有網路 (VPN)</div></td><td>
+      <div class="value"><ul>
+      <p>Client-to-site</p>
+      <p>Site-to-site in  routing mode</p>
+      <p>Site-to-site in bridging mode</p>
+      <p>Self-sustained VPN-key Management</p>
+      <p>Server-specific CA to issue certificates</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">流量與品質 (QoS)</div></td><td>
+      <div class="value"><ul>
+      <p>Traffic Policing</p>
+      <p>Resource Allocation</p>
+      <p>Rate Limiting</p>
+      <p>Call Admission Control</p>
+      <p>TOS/DSCP bit setting</p>
+      <p>Traffic Prioritizing</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">語音編碼</div></td><td>
+      <div class="value"><p><ul>
+      <p>G.729 (pass-through)</p>
+      <p>GSM</p>
+      <p>G.711 A-law/mu-law</p>
+      <p>Speex</p>
+      </ul></p></div></td></tr>
+
+       <tr><td><div class="property">視訊編碼</div></td><td>
+      <div class="value"><p><ul>
+      <p>H.261</p>
+      <p>H.263/H.263+</p>
+      <p>H.264 (pass-through)</p>
+      <p>VP8 (pass-through)</p>
+      </ul></p></div></td></tr>
+
+      <tr><td><div class="property">處理器</div></td><td>
+      <div class="value"><p>Intel J1900 2G, 2M Cache</p></div></td></tr>
+      
+      <tr><td><div class="property">記憶體</div></td>
+      <td><div class="value"><p>DDR3L-1333 4G</p></div></td></tr>
+
+      <tr><td><div class="property">硬碟</div></td>
+      <td><div class="value"><p>SATA3-1TB</p></div></td></tr>
+
+      <tr><td><div class="property">RS-232</div></td>
+      <td><div class="value"><p>Maintenance, Debugging</p></div></td></tr>
+
+      <tr><td><div class="property">WAN</div></td>
+      <td><div class="value"><p>6GbE RJ45</p></div></td></tr>
+
+      <tr><td><div class="property">LAN</div></td>
+      <td><div class="value"><p>6GbE RJ45</p></div></td></tr>
+
+      <tr><td><div class="property">IPv6 支援</div></td>
+      <td><div class="value"><p>YES</p></div></td></tr>
+
+      <tr><td><div class="property">Bypass</div></td>
+      <td><div class="value"><p>2~3</p>
+      <p>(1, 2 Pairs Bypass, extra 2 Pairs Bypass Optional)</p></div></td></tr>
+
+      <tr><td><div class="property">擴充插槽</div></td>
+      <td><div class="value"><p>Optional: 1 x FXO/FXS PCIE Card (4, 8, 16 Ports), </p>
+      <p>T1/E1/J1 PCIE Card</p></div></td></tr>
+
+      <tr><td><div class="property">Console</div></td>
+      <td><div class="value"><p>RJ45 to RS-232 Console</p></div></td></tr>
+
+      <tr><td><div class="property">電源</div></td>
+      <td><div class="value"><p>40W 12V DC Adapter</p></div></td></tr>
+
+      <tr><td><div class="property">安全性</div></td>
+      <td><div class="value">
+      <ul>
+      <p>Proxy</p>
+      <p>Port Fowarding</p>
+      <p>LAN-Net Loopback</p>
+      <p>IP Masquerade </p>
+      <p>IP Load Balance</p>
+      <p>Reshuffle</p>
+      <p>Interface Limiting</p>
+      <p>Request Filter </p>
+      <p>Block Host</p>
+      <p>Traffic Prioritzing</p>
+      <p>Priority Classes</p>
+      <p>Reserve Proxy</p>
+      <p>128-bit Encryption</p>
+      <p>IP Policy Routing</p>
+      </ul> 
+      </div></td></tr>
+
+      <tr><td><div class="property">連結</div></td>
+      <td><div class="value">
+      <ul>
+      <p>SIP</p>
+      <p>Network Bypass</p>
+      <p>VPN </p>
+      <p>Protocol Converting</p>
+      <p>T1/E1 (Optional Module)</p>
+      <p>NAT</p>
+      </ul>
+      <p>(Zone re-definition for Ethernet interfaces, Bridging mode/Routing mode configuration)</p>
+      </div></td></tr>
+
+      <tr><td><div class="property">多媒體服務</div></td><td>
+      <div class="value"><ul>
+      <p>DTMF Pass-through & Connection</p>
+      <p>Media Codec Transferring</p>
+      <p>Ringback Tone Regeneration</p>
+      </ul></div></td></tr>
+  
+      <tr><td><div class="property">其他</div></td><td>
+      <div class="value"><ul>
+      <p>統計 & 使用量資訊</p>
+      <p>回聲消除</p>
+      <p>RSIP Info</p>
+      <p>In-band Audio</p>
+      <p>RFC 2833 compliant DTMF relay</p>
+      <p>VoIP (RTP/RTCP) per IETF RFC 3550 & 3551</p>
+      </ul></div></td></tr>
+
+      <tr><td><div class="property">最大通話數</div></td>
+      <td><div class="value"><p>50</p></div></td></tr>
+
+      <tr><td><div class="property">支援</div></td><td>
+      <div class="value"><ul>
+      <p>Microsoft Lync</p>
+      <p>IMS in teleco operators</p>
+      <p>OXO/OXE switch</p>
+      <p>Skype Connect</p>
+      </ul></div></td></tr>
+
+      <tr><td><div class="property">系統</div></td>
+      <td><div class="value">
+      <ul>
+      <p>AzOS System Enviroment</p>
+      <p>Embedded HTTP Web Server</p>
+      <p>Telnet</p>
+      <p>SNMP V2, V3</p>
+      <p>Remote configuation</p>
+      <p>VPN Server</p>
+      <p>Firewall</p>
+      <p>DNS Manager</p>
+      <p>XMPP Control Manager</p>
+      <p>Plug-in Storage Maintain Interface</p>
+
+      </ul> 
+      </div></td></tr></table>
+</div>
+
+</body>
+</html> 
